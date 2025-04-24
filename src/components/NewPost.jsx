@@ -1,8 +1,10 @@
-import { useOutletContext } from "react-router-dom";
+import DataContext from "../context/DataContext";
+import { useContext } from "react";
 
 const NewPost = () => {
   const { handleSubmit, postTitle, setPostTitle, postBody, setPostBody } =
-    useOutletContext();
+    useContext(DataContext);
+
   return (
     <main className="NewPost">
       <h2>NewPost</h2>

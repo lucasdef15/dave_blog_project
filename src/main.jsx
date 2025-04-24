@@ -9,6 +9,7 @@ import NotFoundPage from "./pages/NotFoundPage.jsx";
 import NewPost from "./components/NewPost";
 import PostPage from "./pages/PostPage";
 import EditPost from "./components/EditPost.jsx";
+import { DataProvider } from "./context/DataContext.jsx";
 
 const router = createBrowserRouter([
   {
